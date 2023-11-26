@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Team 1 (Star Field): Code Hour</title>
+    <link href="index.css" rel="stylesheet" />
+    <link rel="icon" href="media/StarFieldLogo.png" type="image/x-icon">
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const links = document.querySelectorAll('a[href^="#"]');
+          links.forEach(link => {
+              link.addEventListener("click", function (e) {
+                  e.preventDefault();
+                  const targetId = this.getAttribute("href").substring(1);
+                  const targetElement = document.getElementById(targetId);
+                  if (targetElement) {
+                      targetElement.scrollIntoView({
+                          behavior: "smooth",
+                      });
+                  }
+              });
+          });
+      });
+  </script>
+<script>
+   function reloadPage() {
+        location.reload();
+    }
+</script>
+
+    <header>
+    <img src="media/StarFieldLogo.png" class="logoPhoto" />
+    <nav class="head-box">
+      <ul class="navbar">
+        <li><a class="boxcolor" href="javascript:void(0);" onclick="reloadPage()">Home</a></li>
+        <li><a class="boxcolor" href="#media">Media</a></li>
+        <li><a class="boxcolor" href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    </header>
+  </head>
+  <body>
+    <h1>Star Field</h1>
+
+    <h2>What is Code.org?</h2>
+
+    <p>
+      <a href="https://hourofcode.com/az" target="_blank">Code.org</a>
+      is a non-profit organization that aims to make computer science education
+      more accessible to students around the world. It was founded in 2013 by
+      brothers
+      <a href="https://code.org/about/leadership/hadi_partovi" target="_blank"
+        >Hadi</a
+      > and
+      <a href="https://www.linkedin.com/in/apartovi" target="_blank">Ali Partovi</a>. The organization provides a variety of free online resources, tutorials, and courses to help individuals, especially students, learn and engage with computer programming and coding. Code.org's mission is to promote computer science education in schools and to increase participation in the field, especially among underrepresented groups such as women and minorities. The organization offers a curriculum that is designed to be beginner-friendly and suitable for students of all ages. It includes both online and unplugged (offline) activities to introduce programming concepts. One of Code.org's notable initiatives is the "Hour of Code," an annual event that takes place during Computer Science Education Week, where millions of people worldwide participate in coding activities for at least one hour. Code.org also collaborates with schools, teachers, and other organizations to advocate for the inclusion of computer science in the standard curriculum. Overall, Code.org plays a significant role in advancing computer science education and fostering interest in coding and technology among students globally.
+    </p>
+
+    <h2>Briefly About Us</h2>
+
+    <p>Our team consists of 4 brilliant SITE students: <a href="https://www.codeacademy.com/profiles/ayermakova" target="_blank">Albina Yermakova</a>, <a href="https://www.codecademy.com/profiles/system19592" target="_blank">Alisa Nasirli</a>, <a href="https://www.codecademy.com/profiles/AlihasanHasanov18101" target="_blank">Alihasan Hasanov</a>, and <a href="https://www.codecademy.com/profiles/kmanafov" target="_blank">Kanan Manafov</a>. We, as a whole team, came together after finishing our required courses at <a href="https://www.codecademy.com/" target="_blank">codecademy.com</a> to create a great website that introduces us, our <a href="#hourofcode">Hour Of Code</a> event, and our experience of creating this website. By clicking on hour names mentioned above, you can get access to our individual codecademy pages and review our progress. You can also get access to more information about us by clicking <a href="aboutUs.html">About Us</a> here or at the bottom of the page. We all hope that our website can provide you with all the information you require to see and we hope to impress you!</p>
+
+    <h2 id="hourofcode">Our 'Hour Of Code' Experience</h2>
+
+    <p>Our engagement with the Hour of Code event was an enriching experience where our team had the privilege of instructing approximately 130 enthusiastic grade 6-7 students. This initiative, designed to introduce young minds to the world of coding and computer science, proved to be both educational and entertaining. Witnessing the students' curiosity and passion for learning was truly inspiring. The interactive sessions fostered a dynamic environment, allowing the students to grasp fundamental coding concepts with ease. As facilitators, we found great joy in guiding these budding technologists through engaging activities that not only demystified coding but also sparked a genuine interest in the vast possibilities of technology. The Hour of Code event not only underscored the importance of computer science education but also highlighted the sheer joy and excitement that can be derived from the world of coding, making it a memorable and impactful experience for both students and instructors alike.</p>
+
+    <h2>Our Experience in creating this Website</h2>
+
+    <p>Throughout the collaborative journey of developing our website using HTML, CSS, and JavaScript, our team of four encountered a range of challenges that tested our problem-solving and coding skills. From aligning design elements to ensuring cross-browser compatibility, each step presented its unique hurdles. The intricacies of JavaScript functionality added another layer of complexity, requiring meticulous debugging and coordination among team members. Fortunately, the invaluable resources provided by <a href="https://www.codecademy.com/" target="_blank">codecademy.com</a> emerged as a key ally in overcoming these challenges. The platform's interactive courses not only equipped us with in-depth knowledge of web development but also introduced us to best practices and efficient coding techniques. The hands-on approach of Codecademy significantly contributed to our learning process, empowering us to implement more effective and elegant solutions in our website development endeavors.</p>
+
+    <h2 id="media">Media</h2>
+    <p>Immerse yourself in captivating visuals and compelling stories with our rich and dynamic media showcase displaying our experience throughout the Hour of Code event.</p>
+    <img class="img" src="media/Img1.jpeg">
+    <img class="img" src="media/Img2.jpeg">
+    <img class="img" src="media/Img3.jpeg">
+    <img class="img" src="media/Img4.jpeg">
+    <img class="img" src="media/Img5.jpeg">
+    <img class="img" src="media/Img6.jpeg">
+    <img class="img" src="media/Img7.jpeg">
+    <video src="media/Video1.mp4" alt="Video Not Available" controls></video>
+    <video src="media/Video2.mp4" alt="Video Not Available" controls></video>
+
+    <footer>
+        <a>Contact Us</a>
+        <section id="contact">
+          <ul class="ulul">
+            <li><a>Alihasan Hasanov:</a> <span>Gmail: ahasanov18101@ada.edu.az</span></li>
+            <li><a>Alisa Nasirli:</a> <span>Gmail: anasirli19592@ada.edu.az</span></li>
+            <li><a>Albina Yermakova:</a> <span>Gmail: ayermakova19782@ada.edu.az</span></li>
+            <li><a>Kenan Manafov:</a> <span>Gmail: kmanafov19967@ada.edu.az</span></li>
+          </ul>
+        </section>
+        <a href="aboutUs.html">About Us</a>
+        <p class="footer">&copy; 2023 Team Star Field</p>
+      </footer>
+      
+  </body>
+</html>

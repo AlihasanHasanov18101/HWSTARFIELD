@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE HW3 Team Star Field</title>
+    <link rel="stylesheet"  type="text/css" href="aboutUs.css">
+    <link rel="icon" href="media/StarFieldLogo.png" type="image/x-icon">
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const links = document.querySelectorAll('a[href^="#"]');
+          links.forEach(link => {
+              link.addEventListener("click", function (e) {
+                  e.preventDefault();
+                  const targetId = this.getAttribute("href").substring(1);
+                  const targetElement = document.getElementById(targetId);
+                  if (targetElement) {
+                      targetElement.scrollIntoView({
+                          behavior: "smooth",
+                      });
+                  }
+              });
+          });
+      });
+  </script>
+
+    <nav class="head-box">
+        <ul class="navbar">
+          <li><a class="listitem" href="index.html">Home</a></li>
+          <li><a class="listitem" href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+
+
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <ul>
+                <li>
+                        <img src="media/Albina Yermakova Img.jpeg" alt="Albina">
+                        <h2><a href="https://www.codeacademy.com/profiles/ayermakova" target="_blank" class="codecademypersonal">Albina Yermakova</a></h2>
+                        <p>Hello! My name is Albina Yermakova and I'm 17 years old. My first year as a university student began in the School of It and Engineering in <a href="https://www.ada.edu.az/" target="_blank" class="unilink">ADA University</a>. My major is Electrical & Electronics Engineering. I am looking forward to becoming a skilled engineer since it was my goal for a couple of years. Outside of university, I enjoy music and play the harp as a source of relaxation. I am excited about the possibilities that the future holds and the opportunities to connect with like-minded individuals who share a similar drive for success and fulfillment. We hope this website can give an introduction about our team and impress you!</p>
+                </li>
+                <li>
+                        <img src="media/Alisa Nasirli Image.jpeg" alt="Alisa">
+                        <h2><a href="https://www.codecademy.com/profiles/alisanasirli" target="_blank" class="codecademypersonal">Alisa Nasirli</a></h2>
+                        <p>Hello! My name is Alisa Nasirli. I am a 17-year-old School of Information Technologies and Engineering student in <a href="https://www.ada.edu.az/" target="_blank" class="unilink">ADA University</a>, majoring in Computer Engineering. My first interest in coding came from the encouraging lessons at my school, and it helped me choose my future major. Other than coding, I have other artistic hobbies and engage in sports. We hope this website can give an introduction about our team and impress you!</p>
+                </li>
+                <li>
+                        <img src="media/Kanan Manafov Img.jpeg" alt="Kenan">
+                        <h2><a href="https://www.codecademy.com/profiles/kmanafov" target="_blank" class="codecademypersonal">Kanan Manafov</a></h2>
+                        <p>Hello! My name is Kenan Manafov. I am a 17-year-old student at <a href="https://www.ada.edu.az/" target="_blank" class="unilink">ADA University</a>, enrolled in the School of IT and Engineering, specifically in the Computer Engineering faculty. I was good at math and technology-based courses at school, and these skills led me to choose this major. In my leisure time, I play basketball, read books, and learn to play the guitar as a hobby. We hope this website can give an introduction about our team and impress you!</p>
+                </li>
+                <li>
+                        <img src="media/Alihasan Hasanov Img.jpeg" alt="Alihasan">
+                        <h2><a href="https://www.codecademy.com/profiles/AlihasanHasanov18101" target="_blank" class="codecademypersonal">Alihasan Hasanov</a></h2>
+                        <p> Hi, there! My name is Alihasan Hasanov. I am 18 years old, and it is my first year at the School of Information Technologies and Engineering. My major is Information Technologies at <a href="https://www.ada.edu.az/" target="_blank" class="unilink">ADA University</a>. My interest comes from the game I played in my childhood. After trying to increase my health in Minecraft, I have begun to be interested in the computers field. I am also a good chess player. My hobbies are fishing, swimming, listening to Azerbaijani retro music, and playing the guitar.</p>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <footer>
+        <a>Contact Us</a>
+        <section id="contact">
+          <ul class="ulul">
+            <li class="f1"><a>Alihasan Hasanov:</a> <span>Gmail: ahasanov18101@ada.edu.az</span></li>
+            <li class="f1"><a>Alisa Nasirli:</a> <span>Gmail: anasirli19592@ada.edu.az</span></li>
+            <li class="f1"><a>Albina Yermakova:</a> <span>Gmail: ayermakova19782@ada.edu.az</span></li>
+            <li class="f1"><a>Kenan Manafov:</a> <span>Gmail: kmanafov19967@ada.edu.az</span></li>
+          </ul>
+        </section>
+        <p class="footer">&copy; 2023 Team Star Field</p>
+    </footer>
+
+</body>
+</html>
